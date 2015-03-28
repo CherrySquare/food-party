@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/event'
+
   get 'static_pages/map'
 
   get 'static_pages/home'
