@@ -8,10 +8,18 @@
 nav {
   height: 72px;
   background-color: #644F3A;
+  margin-bottom: 24px;
 
   h1 {
+    text-align: left;
     font-family: 'Alfa Slab One', cursive;
-    color: #ffffff;
+    a {
+      color: #ffffff;
+    }
+    a:hover {
+      color: #ffffff;
+      text-decoration:none;
+    }
     span {
       color: #5AB946;
     }
