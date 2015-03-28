@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/attend'
+
   get 'static_pages/profilepage'
 
   get 'static_pages/hostevent'
