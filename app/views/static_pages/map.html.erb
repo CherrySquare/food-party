@@ -21,7 +21,12 @@
         var marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
-          title: 'Hello World!'
+          title: 'Hello World!',
+          url: '/static_pages/event'
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          window.location.href = marker.url;
         });
 
             //Define OSM map type pointing at the OpenStreetMap tile server
