@@ -1,2 +1,122 @@
-<h1>StaticPages#attend</h1>
-<p>Find me in app/views/static_pages/attend.html.erb</p>
+<a href="/static_pages/profilepage"><%= image_tag "foodPartyHouse.jpg", class: "img-rounded" %>
+
+<h3>Aaron Cruz's</a></h3> <h2>Frühlingsball <small><br>Samstag, 11 April 2015</small></h2>
+ </h2>
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Mach mit!</legend>
+
+<!-- File Button -->
+<div class="control-group">
+  <label class="control-label" for="filebutton"><h2>Photo Hochladen</h2></label>
+  <div class="controls">
+    <input id="filebutton" name="filebutton" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="textarea"><h2>Was bringst du mit?</h2></label>
+  <div class="controls">
+    <textarea id="textarea" name="textarea"> </textarea>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="checkboxes"><h2>Ich helfe mit...</h2></label>
+  <div class="controls">
+    <label class="checkbox" for="checkboxes-0">
+      <input name="checkboxes" id="checkboxes-0" value="Option one" type="checkbox">
+      Kochen
+    </label>
+    <label class="checkbox" for="checkboxes-1">
+      <input name="checkboxes" id="checkboxes-1" value="Option two" type="checkbox">
+      Aufräumen
+    </label>
+    <label class="checkbox" for="checkboxes-1">
+      <input name="checkboxes" id="checkboxes-1" value="Option three" type="checkbox">
+      Getränke
+    </label>
+  </div>
+
+  <br>
+
+  </br>
+
+  <div class="btn-group" role="group" aria-label="...">
+
+  <button type="button" class="btn btn-success">Save</button>
+
+</div>
+</div>
+
+</fieldset>
+</form>
+
+
+<div class="row row-centered">
+  <h2>Wer kommt:</h2>
+</div>
+
+
+<div class="row row-centered">
+  <div class="col-xs-small col-centered col-fixed">
+    <%= image_tag "bandc.jpg", class: "img-rounded", :width => 100, :height => 100 %>
+  </div>
+  <div class="col-xs-small col-centered col-fixed">
+    <%= image_tag "Shelly.jpg", class: "img-rounded", :width => 100, :height => 100 %>
+  </div>
+  <div class="col-xs-2 col-centered col-fixed">
+    <h4>Shelly bringt:</h4>
+    <p>Karfiol und Brokoli</p>
+  </div>
+  <div class="col-xs-2 col-centered col-fixed">
+    <h4>Ich helfe mit:</h4>
+    <ul>
+      <li>Kochen</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row row-centered">
+  <div class="col-xs-small col-centered col-fixed">
+    <%= image_tag "carrots.jpg", class: "img-rounded", :width => 100, :height => 100 %>
+  </div>
+  <div class="col-xs-small col-centered col-fixed">
+    <%= image_tag "Ramon.jpg", class: "img-rounded", :width => 100, :height => 100 %>
+  </div>
+  <div class="col-xs-2 col-centered col-fixed">
+    <h4>Ramon bringt:</h4>
+    <p>Eine Kiste Karotten</p>
+  </div>
+  <div class="col-xs-2 col-centered col-fixed">
+    <h4>Ich helfe mit:</h4>
+    <ul>
+      <li>Kochen</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row row-centered">
+  <div class="col-xs-small col-centered col-fixed">
+    <%= image_tag "celery.jpg", class: "img-rounded", :width => 100, :height => 100 %>
+  </div>
+  <div class="col-xs-small col-centered col-fixed">
+    <%= image_tag "Igor.jpg", class: "img-rounded", :width => 100, :height => 100 %>
+  </div>
+  <div class="col-xs-2 col-centered col-fixed">
+    <h4>Igor bringt:</h4>
+    <p>2 Bund Sellerie</p>
+  </div>
+  <div class="col-xs-2 col-centered col-fixed">
+    <h4>Ich helfe mit:</h4>
+    <ul>
+      <li>Kochen</li>
+    </ul>
+  </div>
+</div>
