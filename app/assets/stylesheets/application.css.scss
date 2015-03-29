@@ -25,6 +25,10 @@ nav {
     }
   }
 }
+
+.description {
+  font-size: 16px;
+}
 .formulario {
   background-color: #F1E7C9 !important;
   padding-bottom: 1em;
@@ -50,7 +54,8 @@ nav {
 }
 
 .bullets {
-  text-align: left
+  text-align: left;
+  margin-bottom: 2em;
 }
 
 .container {
@@ -125,7 +130,7 @@ h4 {
 }
 
 #map {
-  height: 750px;
+  height: 500px;
   width: 100%;
 }
 
