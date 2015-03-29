@@ -59,6 +59,17 @@ h2 {
   }
 }
 
+h4 {
+  font-family: 'Alfa Slab One', cursive;
+  a {
+    color: #F1E7C9;
+  }
+  a:hover {
+    color: #644F3A;
+    text-decoration:none;
+  }
+}
+
 #map {
   height: 750px;
   width: 100%;
