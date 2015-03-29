@@ -26,7 +26,7 @@ nav {
   }
 }
 .mach-mit {
-  font-size: 2em;
+  font-size: 1.5em;
     font-family: 'Alfa Slab One', cursive;
 }
 .row-centered {
@@ -82,6 +82,9 @@ body {
   up: 10px;
   background-color: #F8F6E1;
   color: #4A3520;
+  a {
+    color: #5AB946;
+  }
 }
 
 h3 {
