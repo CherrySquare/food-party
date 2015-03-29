@@ -26,7 +26,8 @@ nav {
   }
 }
 .mach-mit {
-  margin-bottom:3em;
+  font-size: 2em;
+    font-family: 'Alfa Slab One', cursive;
 }
 .row-centered {
     text-align:center;
@@ -52,14 +53,19 @@ nav {
     a:hover {
       text-decoration:none;
     }
+  background-color: #F8F6E1;
   .facebook-box {
     color: #f7f7f7;
     background-color: #3b5998;
     margin-bottom: 1em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
   }
   .foodsharing-box {
     background-color: #4A3520;
     color: #ffffff;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     span {
       color: #5AB946;
     }

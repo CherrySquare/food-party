@@ -2,28 +2,40 @@
 
 <h3>Aaron Cruz's</a></h3> <h2>Frühlingsball <small><br>Samstag, 11 April 2015</small></h2> 
 
-<button type="button" class="btn btn-success mach-mit" role="button" data-toggle="modal" data-target=".bs-example-modal-sm">Mach mit!</button> </h2>
+<a href="/static_pages/flogin" class="btn btn-success mach-mit" role="button">Mach mit!</a> </h2>
 
 <div class="row row-centered">
   <h2>Wer kommt:</h2>
 </div>
 
+<div class="row row-centered">
+  <div class="col-xs-small col-centered col-fixed">
+    <%= image_tag "basket.png", class: "img-rounded", :width => 100, :height => 100 %>
+  </div>
+  <div class="col-xs-small col-centered col-fixed">
+    <%= image_tag "Pilar.jpg", class: "img-rounded", :width => 100, :height => 100 %>
+  </div>
+  <div class="col-xs-2 col-centered col-fixed">
+    <h4>Pilar bringt:</h4>
+    <p>Bananen</p>
+  </div>
+  <div class="col-xs-2 col-centered col-fixed">
+    <h4>Ich helfe mit:</h4>
+    <ul>
+      <li>Kochen</li>
+    </ul>
+  </div>
+</div>
 
-
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
+<script type="text/javascript">
+       $(window).load(function(){
+        $('#myModal').modal('show');
+    });
+</script>
+<div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <h5>Du bist noch nicht eingeloggt!</h1>
-<a href="/static_pages/attend">
-      <div class="facebook-box">
-        <h2>Mit Facebook einloggen</h2>
-      </div>
-</a>
-<a href="/static_pages/attend">
-      <div class=" foodsharing-box">
-        <h2>Mit food<span>sharing</span> einloggen</h2>
-      </div>
-</a>
+      <h1>Glückwunsch! Bis zum 11/04/15.</h1>
     </div>
   </div>
 </div>
