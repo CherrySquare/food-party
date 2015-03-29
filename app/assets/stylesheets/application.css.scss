@@ -25,6 +25,24 @@ nav {
     }
   }
 }
+.mach-mit {
+  margin-bottom:1em;
+}
+.row-centered {
+    text-align:center;
+    margin-bottom: 1em;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-xs-small {
+  width: 120px;
+}
 
 .bullets {
   text-align: left
