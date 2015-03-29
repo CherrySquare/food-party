@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/mobileprofile'
+
   get 'static_pages/flogin'
 
   get 'static_pages/attend'
