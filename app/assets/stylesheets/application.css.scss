@@ -28,13 +28,35 @@ nav {
 
 .rotate {
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg); // IE9 only
+      -ms-transform: rotate(90deg); // Internet Explorer 9
           transform: rotate(90deg);
 }
 
 body {
   up: 10px;
   background-color: #F8F6E1;
+  color: #4A3520;
+}
+
+h3 {
+  font-family: 'Alfa Slab One', cursive;
+  a {
+    color: #4A3520;
+  }
+  a:hover {
+    color: #5AB946;
+    text-decoration:none;
+  }
+}
+h2 {
+  font-family: 'Alfa Slab One', cursive;
+  a {
+    color: #4A3520;
+  }
+  a:hover {
+    color: #ffffff;
+    text-decoration:none;
+  }
 }
 
 #map {
@@ -52,5 +74,3 @@ body {
     margin-right: 15px;
   }
 }
-
-
