@@ -26,6 +26,24 @@ nav {
   }
 }
 
+.container {
+    a:hover {
+      text-decoration:none;
+    }
+  .facebook-box {
+    color: #f7f7f7;
+    background-color: #3b5998;
+    margin-bottom: 1em;
+  }
+  .foodsharing-box {
+    background-color: #4A3520;
+    color: #ffffff;
+    span {
+      color: #5AB946;
+    }
+  }
+}
+
 .rotate {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg); // Internet Explorer 9
