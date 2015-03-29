@@ -2,7 +2,7 @@
   <form class="form-horizontal">
     <div class="form-group">
       <div class="col-sm-4">
-        <input type="text" class="form-control" placeholder="PLZ, Strasse">
+        <input type="text" class="form-control" placeholder="PLZ, Strasse...">
       </div>
       <div class="col-sm-4">
         <h3>Found 1 event near you:</h3>
@@ -12,12 +12,22 @@
   </form>
 </div>
 <div id="map" style="float: left;"></div>
+
+<div id="tt" style="position:absolute" title="Frühlingsball, hosted by Aaron Cruz, 11/04/15">
+</div>
  
         <div id="footer">&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div>
  
         <!-- bring in the google maps library -->
  
         <script type="text/javascript">
+
+
+var mouse = {
+    x: 0,
+    y: 0
+};
+
             //Google maps API initialisation
             var element = document.getElementById("map");
  
@@ -40,6 +50,21 @@
         google.maps.event.addListener(marker, 'click', function() {
           window.location.href = marker.url;
         });
+document.addEventListener('mousemove', function (e) {
+    mouse.x = e.clientX || e.pageX;
+    mouse.y = e.clientY || e.pageY;
+}, false);
+
+
+google.maps.event.addListener(marker, 'mouseover', function (event) {
+    $("#tt").css("left", mouse.x + "px").css("top", "10px").tooltip('show');
+});
+
+google.maps.event.addListener(marker, 'mouseout', function (event) {
+
+    $("#tt").tooltip('hide');
+});
+
 
             //Define OSM map type pointing at the OpenStreetMap tile server
             map.mapTypes.set("OSM", new google.maps.ImageMapType({
@@ -51,4 +76,15 @@
                 name: "OpenStreetMap",
                 maxZoom: 18
             }));
+
+google.maps.event.addListener(marker, 'mouseover', function (event) {
+
+    $("#tt").css("left", mouse.x + "px").css("top", (mouse.y - 20) + "px").tooltip('show');
+});
+
+google.maps.event.addListener(marker, 'mouseout', function (event) {
+
+    $("#tt").tooltip('hide');
+});
+
         </script>
