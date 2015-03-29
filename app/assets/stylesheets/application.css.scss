@@ -26,6 +26,12 @@ nav {
   }
 }
 
+.rotate {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg); // IE9 only
+          transform: rotate(90deg);
+}
+
 body {
   up: 10px;
   background-color: #F8F6E1;
